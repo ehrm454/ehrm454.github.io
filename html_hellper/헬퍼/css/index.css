@@ -1,0 +1,192 @@
+*{margin:0; padding:0; text-decoration: none; list-style:none;}
+body{background-color:black;}
+header{width:100%;  height:80px;}
+.header_content{max-width:80em; margin:0 auto; height:80px; }
+.header_content a{color:white; font-size:30px; line-height: 60px;}
+.menu_box { width:100%; height:80px; position:fixed; transition:all 0.5s ease-in-out; -webkit-transition:all 0.5s ease-in-out;
+    background-color: #19171A; z-index: 100;}
+.menu_inner { width:1200px; height:80px; margin:0 auto; }
+
+/* background-color:#19171A; */
+
+.fixed { background:rgba(0,0,0,0.3); transition:all 0.5s ease-in-out; -webkit-transition:all 0.5s ease-in-out; }
+
+
+.menu_box .menu_inner > ul { float:right; padding:0 35px 0 0; }
+.menu_box .menu_inner li { float:left; text-align:center; margin-left:30px; }
+.menu_box .menu_inner li a { text-decoration:none; color: #ffffff; line-height:80px; font-size:12px; }
+
+/* 메뉴부분 마우스 오버시 색상 */
+.menu_box .menu_inner li a:hover { border-bottom:2px solid #DDD; color:#DDD; }
+.menu_box .menu_inner li:nth-child(2) a:hover { border-bottom:2px solid #00ff18; color:#00ff18; }
+.menu_box .menu_inner li:nth-child(3) a:hover { border-bottom:2px solid #ff0000; color:#ff0000; }
+.menu_box .menu_inner li:nth-child(4) a:hover { border-bottom:2px solid #0556ff; color:#0556ff; }
+.menu_box .menu_inner li:nth-child(5) a:hover { border-bottom:2px solid #000000; color:#000000; }
+
+
+
+
+
+.front{width:100%; background:white; margin: 0 auto; }
+.front_content{ max-width:80em; height:100%; margin: 0 auto;}
+
+/* p태그 */
+
+.one_header h2 {text-align:center;font-family: 'Arial';color: #ffffff;text-transform: uppercase;font-weight: bold;font-size: 3rem;line-height: 0.75;}
+.one_header span {display: block; margin-top:30px;}
+.one_header span:not(.light) {opacity: 0;-webkit-animation: flashText .5s ease-out alternate infinite;animation: flashText .5s ease-out alternate infinite;}
+.one_header span.light {position: relative;display: inline-block;}
+.one_header span.light:before {position: absolute;left: 0;top: -10%;width: 100%;height: 120%;background: #ff0000;
+    -webkit-filter: blur(13px);filter: blur(20px);content: "";opacity: 0;
+    -webkit-animation: flash .8s ease-out alternate infinite;animation: flash .8s ease-out alternate infinite;}
+@-webkit-keyframes flash { to {opacity: 1;} }
+/* 이계 * 킬베로스 */
+.content_one{width:100%; height:2200px; background: #000000; margin: 0 auto;}
+.section_content_one{max-width:80em; height:100%; margin: 0 auto;}
+.content_one_img{width:380px; height:450px; margin: 0 auto; text-align: center;}
+.content_one_img img{height:auto; width:100%;}
+.content_one .section_content_one .content_one_img div img{width:100%; height:100%; margin: 0 auto;}
+.content_one .section_content_one .content_one_img  div{padding:10px; }
+
+
+.content_one_img2{width:80em; height:350px; position:relative; margin-top:10px;}
+.sub_1{width:450px; height:350px;margin-left:195px; position: absolute;}
+.sub_1 img{margin: 0 auto; width:450px;}
+.sub_2{width:550px; height:350px;margin-left:655px; position:absolute;}
+.sub_2 img{margin : 0 auto; height:450px;}
+
+
+.content_one_img3{width:80em; height: 380px;}
+.sub_3{width:37%; height:378px;float:left; margin-top:3px;}
+.sub3 img{}
+.sub_4{width:22%; height:540px;float:left;}
+.sub_4 img{}
+.sub_5{width:41%; float:left; margin-top:5px;}
+.sub_5 img{}
+
+.content_one_img4{width:80em; height:500px; position:relative; margin: 0 auto;}
+.sub_6{width:473px; height:340px;position: absolute; margin-top:10px;}
+.sub_6 img{width:470px; height: 370px;}
+.sub_7{width:524px; height:370px;  margin-top:100px;float:left; margin-left:755px; position: absolute;}
+.sub_7 img{width:500px; height: 310px;}
+.sub_8{width:470px; float:left; position: absolute;  margin-top:365px;}
+.sub_8 img{width:500px; height: 330px;}
+
+.sub_11{width:15%; float:left;  margin-left:480px;}
+.sub_11 img{width:268px; height: 400px;}
+
+/* 구사회 */
+
+.two_header h2 {text-align:center;font-family: 'Arial';color: #ffffff;text-transform: uppercase;font-weight: bold;font-size: 6rem;line-height: 0.75;}
+.two_header span {display: block; margin-top:30px;}
+.two_header span:not(.light) {opacity: 0;-webkit-animation: flashText .5s ease-out alternate infinite;animation: flashText .5s ease-out alternate infinite;}
+.two_header span.light {position: relative;display: inline-block;}
+.two_header span.light:before {position: absolute;left: 0;top: -10%;width: 100%;height: 120%;background: #00ff18;
+    -webkit-filter: blur(13px);filter: blur(30px);content: "";opacity: 0;
+    -webkit-animation: flash .8s ease-out alternate infinite;animation: flash .8s ease-out alternate infinite;}
+@-webkit-keyframes flash { to {opacity: 1;} }
+
+.content_two{width:100%; height:1700px;   background: #000000; margin: 0 auto; }
+.section_content_two{width:80em; height:1500px; background: #000000; margin: 0 auto;}
+
+.content_two_img{ height:550px;  width:100%; margin-top:30px;
+    display: grid; grid-template-columns: 1fr 1fr 1fr;}
+.two_sub_1{margin-left:120px; width:290px; height:410px; padding:20px;  margin-top:90px;}
+.two_sub_1 img{ width:100%; height:100%;}
+.two_sub_2{text-align: center; width:380px; height:475px; margin-top:45px;margin-left:15px; }
+.two_sub_2 img{width:100%; height:100%;}
+.two_sub_3{
+    width:290px; height:410px; margin-top:110px;}
+.two_sub_3 img{width:100%; height:100%;}
+
+.content_two_img2{ height:450px;  max-width: 80em;width:80em;
+    display: grid; grid-template-columns: 1fr 1fr 1fr;}
+.two_sub_4{position:absolute; width:290px; height:410px; margin-left:140px;}
+.two_sub_4 img{ width:100%;height:100%;}
+.two_sub_5{position:absolute; width:290px;  height:410px; margin-left:510px; }
+.two_sub_5 img{width:100%;height:100%; }
+.two_sub_6{position:absolute; width:290px; ; height:410px; margin-left:875px; }
+.two_sub_6 img{width:100%;height:100%; }
+
+.content_two_img3{ height:600px;  max-width: 80em;width:80em;}
+.two_sub_7{position:absolute; width:290px; height:410px; margin-left:140px;}
+.two_sub_7 img{ width:100%;height:100%;}
+.two_sub_8{position:absolute; width:290px; ; height:410px; margin-left:510px; }
+.two_sub_8 img{width:100%;height:100%; }
+.two_sub_9{position:absolute; width:290px; ; height:410px; margin-left:875px; }
+.two_sub_9 img{width:100%;height:100%; }
+
+
+/*  빨강 컨샙 */
+.content_three{width:100%; height:1400px; background: #000000; margin: 0 auto;}
+.section_content_three{max-width:80em; width:80em;height:100%; margin: 0 auto;background: #000000}
+.three_header h2 {text-align:center;font-family: 'Arial';color: #ffffff;text-transform: uppercase;font-weight: bold;font-size: 6rem;line-height: 0.75;}
+.three_header span {display: block;}
+.three_header span:not(.light) {opacity: 0;-webkit-animation: flashText .5s ease-out alternate infinite;animation: flashText .5s ease-out alternate infinite;}
+.three_header span.light {position: relative;display: inline-block;margin-top: 70px;}
+.three_header span.light:before {position: absolute;left: 0;top: -10%;width: 100%;height: 120%;background: #ff0000;
+    -webkit-filter: blur(13px);filter: blur(30px);content: "";opacity: 0;
+    -webkit-animation: flash .8s ease-out alternate infinite;animation: flash .8s ease-out alternate infinite;}
+@-webkit-keyframes flash { to {opacity: 1;} }
+.content_three_img{width:80em; height: 300px;}
+
+.three_sub_1{width:220px; Float:left; padding:50px; marign-left:190px;}
+.three_sub_1 img{}
+.three_sub_2{width:220px; Float:left; padding:50px;}
+.three_sub_2 img{}
+.three_sub_3{width:220px; Float:left; padding:50px;}
+.three_sub_3 img{}
+.three_sub_4{width:220px; Float:left; padding:50px;}
+.three_sub_4 img{}
+.content_three_img2{width:80em; height:300px; margin-top:50px;}
+.content_three_img2 img{}
+.three_sub_5{ Float:left; width:300px; height:300px; margin-left:80px;}
+.three_sub_5 img{width:100%;}
+.three_sub_6{ width:300px; height:300px;Float:left; margin-left:100px;}
+.three_sub_6 img{width:100%;}
+.three_sub_7{width:300px; height:300px; Float:left; margin-left:120px; }
+.three_sub_7 img{width:100%;}
+
+.content_three_img2{width:80em; height:300px; margin-top:50px;}
+
+
+.content_three_img3{width:80em; height:300px; margin-top:50px;}
+.content_three_img3 img{}
+.three_sub_8{ width:20%; height:300px;Float:right; margin-right:330px;}
+.three_sub_8 img{width:100%;}
+.three_sub_9{ width:20%; height:300px;Float:left; }
+.three_sub_9 img{width:100%;}
+
+
+
+
+.arrow-left {
+    width: 0;
+    height: 0;
+    border-top: 30px solid transparent;
+    border-bottom: 30px solid transparent;
+    border-right:30px solid #7e787e;
+    position:absolute;
+    margin-left:30px;
+    margin-top:30px;
+}
+/*
+ <div class="content_two">
+             <div class="section_content_two">
+                 <div class="two_header"><h2><span class="light">求巳會</span></h2></div>
+
+                 <div class="content_two_img">
+                     <div class="two_sub_1"><img src="img/White/구사회/짱가.jpg" alt="짱가"/></div>
+                 </div
+ */
+
+
+
+
+
+
+
+
+
+
+

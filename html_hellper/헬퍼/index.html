@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/img.css">
+    <link rel="stylesheet" href="css/four.css">
+    <link rel="stylesheet" href="css/last.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="http://code.jquery.com/jquery.min.js"></script>
+    <script src="js/js.js"></script>
+    <script src="js/content_two.js"></script>
+    <script type="text/javascript">
+        $(document).ready( function() {
+            $("#content_killberos").load("content_killberos.html");  // 원하는 파일 경로를 삽입하면 된다
+            $("#content_goo").load("content_goo.html");  // 추가 인클루드를 원할 경우 이런식으로 추가하면 된다
+            $("#content_redpage").load("content_redpage.html");
+            $("#content_blue").load("content_blue.html");
+            $("#content_purple").load("content_purple.html");
+        });
+    </script>
+</head>
+<body>
+             <!--header 시작-->
+                <header>
+                    <div class="menu_box">
+                        <div class="menu_inner">
+                            <ul>
+
+                                <li><a href="#content_killberos">KILLBEROS</a></li>
+                                <li><a href="#content_goo">求巳會</a></li>
+                                <li><a href="#content_redpage">RED_PAGE</a></li>
+                                <li><a href="#content_blue">死界</a></li>
+                                <li><a href="#content_purple">下界 印</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </header>
+            <!--header 끝-->
+
+    <section>
+
+            <!--영상-->
+
+        <div class="front" id="section01">
+            <div class="front_content">
+                <video id="video" preload="auto" autoplay="autoplay" loop="loop" muted="muted" volume="0">
+                    <source src="img/HELLPER_ANIMATE.mp4"></video>
+            </div>
+        </div>
+
+            <!--끝-->
+
+        <div class="content_one" id="content_killberos"></div>
+        <div class="content_two" id="content_goo"></div>
+        <div class="content_three" id="content_redpage"></div>
+        <div class="content_four"  id="content_blue"></div>
+        <div class="content_last" id="content_purple">
+
+
+
+
+    </section>
+</body>
+
+</html>

@@ -1,0 +1,48 @@
+
+.four_header h2 {text-align:center;font-family: 'Arial';color: #fff7ff;text-transform: uppercase;font-weight: bold;font-size: 6rem;line-height: 0.75;}
+.four_header span {display: block;}
+.four_header span:not(.light) {opacity: 0;-webkit-animation: flashText .5s ease-out alternate infinite;animation: flashText .5s ease-out alternate infinite;}
+.four_header span.light {position: relative;display: inline-block;margin-top: 70px;}
+.four_header span.light:before {position: absolute;left: 0;top: -10%;width: 100%;height: 120%;background: #6b6bff;
+    -webkit-filter: blur(30px);filter: blur(30px);content: "";opacity: 0;
+    -webkit-animation: flash .8s ease-out alternate infinite;animation: flash .8s ease-out alternate infinite;}
+@-webkit-keyframes flash { to {opacity: 1;} }
+
+.content_four{width:100%; height:2600px;   background: #0556ff; margin: 0 auto; }
+.section_content_four{width:80em; height:2600px; background: #0558f7; margin: 0 auto;}
+
+
+
+.content_four_img1{ width:100%; height:410px; margin-top:30px;}
+.four_sub_1{ width:600px; height:410px; margin: 0 auto;}
+.four_sub_1 img{ width:100%; height:100%;}
+
+.content_four_img2{ height:470px;  max-width: 80em;width:80em; margin-top:30px;}
+.four_sub_2{position:absolute; width:300px; height:470px; margin-left:140px;}
+.four_sub_2 img{ width:100%;height:100%;}
+.four_sub_3{position:absolute; width:330px;  height:470px; margin-left:490px; }
+.four_sub_3 img{width:100%;height:100%; }
+.four_sub_4{position:absolute; width:330px;  height:470px; margin-left:865px; }
+.four_sub_4 img{width:100%;height:100%; }
+
+.content_four_img3{ height:410px;  max-width: 80em;width:80em; margin-top:30px;}
+.four_sub_5{position:absolute; width:300px; height:410px; margin-left:140px;}
+.four_sub_5 img{ width:100%;height:100%;}
+.four_sub_6{position:absolute; width:710px; ; height:410px; margin-left:490px; }
+.four_sub_6 img{width:100%;height:100%; }
+
+
+.content_four_img4{ height:343px;  max-width: 80em;width:80em; margin-top:30px;}
+.four_sub_7{position:absolute; width:520px; height:343px; margin-left:140px;}
+.four_sub_7 img{ width:100%;height:100%;}
+.four_sub_8{position:absolute; width:520px; ; height:343px; margin-left:680px; }
+.four_sub_8 img{width:100%;height:100%; }
+
+
+.content_four_img5{ height:500px;  max-width: 80em;width:80em; margin-top:30px;}
+.four_sub_9{position:absolute; width:260px; height:550px; margin-left:530px;}
+.four_sub_9 img{ width:100%;height:100%;}
+.four_sub_10{position:absolute; width:400px; height:550px; margin-left:90px;}
+.four_sub_10 img{ width:100%;height:100%;}
+.four_sub_11{position:absolute; width:400px; height:550px; margin-left:825px;}
+.four_sub_11 img{ width:100%;height:100%;}

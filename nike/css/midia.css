@@ -1,0 +1,57 @@
+*{padding:0; margin:0; list-style:none; text-decoration: none;}
+@media(min-width:1400px)  {
+
+
+    .Garbage{height:140px;}
+    header{min-width:60em; height:140px; max-height:140px; background-color:white;  margin:0 auto;
+        width:100%; position: fixed;}
+    .img_array img{width:100%;}
+    div *{font-family: '나눔고딕', 'NanumGothic', Malgun Gothic, '맑은고딕', Apple Gothic, Dotum, '돋움', sans-serif !important;}
+    div p{text-align: center;font-size: 1em;letter-spacing: -2.5px;font-weight: 600; color: #4d494d;
+    }
+    .header_C{min-width:60em; max-width:60em; height:59px; width:100%;}
+
+
+    .logo{max-width:60em; width:20%; height:59px; padding: 0 0 0 24px; float:left;}
+    .logo img{height:40px; width:60px; margin-top:10px;}
+
+
+    .menu{width:50%; height:59px;right:80px; position: absolute; display: block;}
+    .menu li{float:right; padding:0 0 0 24px; line-height:60px;}
+
+    nav{ height:80px; max-height:80px; margin:0 auto; text-align:center;}
+    nav ul{margin: 0 auto;}
+    nav ul ul {display: none;}
+    nav ul li:hover > ul {display: block;}
+    nav ul {background-color: #ffffff;list-style: none;position: relative;display: inline-table;}
+    nav ul:after {content: ""; clear: both; display: block;}
+    nav ul li {float: left;}
+    nav ul li:hover {background: #ffffff;}
+    nav ul li:hover a {color: #000000;}
+    nav ul li a {display: block; padding: 20px;color: #000000; text-decoration: none;}
+    nav ul li ul li {background-color: #ffffff;}
+    nav ul ul li {float: none;}
+    nav ul ul ul {position: absolute; left: 100%; top:0;}
+    .content_one{width:100%; height:100%;}
+    .p_array{width:100%; text-align: center; min-height:140px; padding:40px 0 100px;}
+    .p_array h1{}
+    .p_array p{margin-top:15px;}
+    .p_array img{ height:39px;}
+    .button_array{width:100%; margin: 0 auto; text-align: center; }
+    .button_array button{width:88px;height:40px; color:black; border: 1px solid black;
+        background: white; margin:15px 30px 0 0; text-align: center; border-radius: 5px;}
+    .button_array button:hover{background-color:black; color:white;}
+
+    .button_array_1{width:100%; margin: 0 auto; text-align: center; }
+    .button_array_1 button{width:115px;height:40px; color:black; border: 1px solid black;
+        background: white; margin:15px 10px 0 0; text-align: center; border-radius: 5px;}
+    .button_array_1 button:hover{background-color:black; color:white;}
+
+    video{width:100%;}
+
+    .sub_Area{width:100%; height:80px; line-height:80px;}
+
+
+
+}
+

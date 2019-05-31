@@ -3,6 +3,9 @@ body{background:black;}
 .warp{width:100%; height:100%;}
 .warp img{width:100%; height:100%;}
 .top_content{position:relative; width:100%;height:100%; z-index:101; }
+.top_content_h2{position: absolute;  top: 50%; left: 50%;
+    transform: translate(-50%, -50%); font-size: 30px; z-index: 2; color: white;text-align: center;
+    font-weight: 600;font-family: 'Oswald', sans-serif;}
 .middle_content{position:relative; width: calc(100% - 100px);max-width: 1500px; background: black; height:5000px; z-index:90;top:-10px; margin:0 auto;}
 .middle_content .img_content {width: calc(100% - 80px);padding-left: 80px; background: white;}
 .content_array{width:auto; height:auto;}

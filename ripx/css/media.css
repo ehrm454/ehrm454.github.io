@@ -49,4 +49,16 @@
         transition: -webkit-transform .6s cubic-bezier(.58,.14,.06,1);
         transform: rotate(90deg) translateX(0px);
     }
+    .top_content_h2{font-size:11px;     font-weight: 100;}
+    .content_array > div{
+        padding-top: -20px;
+        padding-left: -20px;
+        padding-right: -20px;
+        padding-bottom: -25px;
+    }
+    .content_array>.img_array_5{display:none;}
+    .menu_inner{display:none;}
+    .p_array p{font-size:24px;}
+    .content_array>div>h3{font-size:13px;     font-weight: 100;}
+    #section01{margin-top:18px;}
 }

@@ -5,114 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0 "/>
     <title>Title</title>
     <link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
-<style>
-    *{margin:0; padding:0;}
-    body{background:black;}
-    .warp{width:100%; height:100%;}
-    .warp img{width:100%; height:100%;}
-    .top_content{position:relative; width:100%;height:100%; z-index:101; }
-    .middle_content{position:relative; width: calc(100% - 100px);max-width: 1500px; background: black; height:5000px; z-index:90;top:-10px; margin:0 auto;}
-    .middle_content .img_content {width: calc(100% - 80px);padding-left: 80px; background: white;}
-    .content_array{width:auto; height:auto;}
-
-    .content_array>div{    height: 100%;left: 0;top: 0;padding-top: 7%;margin-left: 3%;padding-right: 10%;
-     text-decoration: none;margin-bottom: 100px;
-        -webkit-transition-timing-function: ease-out;
-        transition-timing-function: ease-out;
-        display: block;float: left;
-        width: 30%; position: relative; font-family: 'Oswald', sans-serif;
-        transition-duration:1s;-webkit-transition: width 1s, height 3s;
-        transition: all .5s ease-out;
-   color:white;
-    }
-    .content_array>div>img{    padding-left: 80px;}
-    .img_array_1 , .img_array_2, .img_array_3, .img_array_4{width: calc(50% - 160px);}
-    .img_array_1 , .img_array_2, .img_array_3, .img_array_4>*{object-fit: cover;height: 100%;width: 100%;left: 0;top: 0;}
-
-    .p_array{font-size: 40px;font-weight: 700;line-height: 1.1;margin: 0 0 5px;text-transform: uppercase;transition-duration:1s; }
-    .side_p{
-        font-size: 20px;
-        position: absolute;
-        width: -moz-fit-content;
-        width: fit-content;
-        bottom: 94%;
-        left: calc(100% - 13px);
-        letter-spacing: 1px;
-        text-transform: uppercase;
-        -webkit-transform-origin: bottom left;
-        -ms-transform-origin: bottom left;
-        transform-origin: bottom left;
-        -webkit-backface-visibility: hidden;
-        backface-visibility: hidden;
-        transition: -webkit-transform .6s cubic-bezier(.58,.14,.06,1);
-        transform: rotate(90deg) translateX(0px);
-            }
-    .content_array>div:hover .p_array{transform: translateY(-95px); }
-    .content_array>div>img{ transition-duration:1s; }
-    .content_array>div:hover img{  opacity: 0.5; }
-    .content_array>div:hover .side_p{transform: rotate(90deg) translateX(60%);}
-    .img_array_2 {    margin-top: 8%;}
-    .img_array_3{ margin-top: -16%; padding-top:0;}
-    .img_array_4{margin-top:10%;}
-
-
-
-
-    @media screen and (max-width: 1080px) {
-        body {
-            overflow-x: hidden;
-            min-width: 320px;
-        }
-        .top_content{padding:0; width:auto;}
-        .middle_content .img_content {
-        width:auto;
-        }
-        .middle_content .img_content {
-            padding:0;
-        }
-        .middle_content {
-            position: relative;
-            width:auto;
-            max-width: 100000px;
-            margin: auto;
-            background: #000000;
-            height: 5000px;
-        }
-        .content_array>div>img {
-            padding:0;
-        }
-        .content_array>div {
-           padding:0;
-            margin:0;
-            width: 100%;
-            position: relative;
-            font-family: 'Oswald', sans-serif;
-            transition-duration: 1s;
-            -webkit-transition: width 1s, height 3s;
-            transition: all .5s ease-out;
-        }
-        .side_p {
-            font-size: 20px;
-            position: absolute;
-            width: -moz-fit-content;
-            width: fit-content;
-            bottom: 94%;
-            left:0;
-            letter-spacing: 1px;
-            text-transform: uppercase;
-            -webkit-transform-origin: bottom left;
-            -ms-transform-origin: bottom left;
-            transform-origin: bottom left;
-            -webkit-backface-visibility: hidden;
-            backface-visibility: hidden;
-            transition: -webkit-transform .6s cubic-bezier(.58,.14,.06,1);
-            transform: rotate(90deg) translateX(0px);
-        }
-    }
-
-</style>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="http://code.jquery.com/jquery.min.js"></script>
+    <link href="css/index.css" rel="stylesheet" />
+    <link href="css/media.css" rel="stylesheet"/>
+    <link href="js/js.js" rel="script">
     <script>
+
         $(document).ready(function() {
             $(window).scroll(function () {
                 var scrollValue = $(document).scrollTop();
@@ -120,7 +18,7 @@
             });
 
             $(window).on("scroll", function () {
-                var width=$(".top_content").width()
+                var width=$(".top_content").width();
 
                 let top = $(window).scrollTop();
                 if(width>1080){
@@ -129,19 +27,47 @@
                             top: -300
                         }, 1);
                     }
+                    if(top>=2021){
+                        $('.img_array_5 , .img_array_6').animate({
+                            top: -450
+                        }, 1);
+                    }
                 }
-
             });
+
         });
     </script>
 </head>
 <body>
+<div class="menu_box">
+    <div class="menu_inner">
+        <div class="logo"><a href="#section01">FMW - ONEPAGE</a></div>
+        <ul>
+            <li><a href="#section01">LIFE</a></li>
+            <li><a href="#section02">LIFE AS A SINGER</a></li>
+            <li><a href="#section03">ALBUM</a></li>
+            <li><a href="#section04">MENU04</a></li>
+            <li><a href="#section05">MENU05</a></li>
+        </ul>
+    </div>
+</div>
+
 <div class="warp">
+
         <div class="top_content">
             <img src="https://wallpaperaccess.com/full/24654.jpg"/>
+            <h2 style="position: absolute;  top: 50%; left: 50%;
+            transform: translate(-50%, -50%); font-size: 30px; z-index: 2; color: white;text-align: center;
+             font-weight: 600;font-family: 'Oswald', sans-serif;">Even if I die or have to make sacrifices,<br>
+                I hope my life makes at least 5 million children happy.<br>
+                Or I want them to find out some answers or solutions through my life.<br>
+                regardless of the negative public opinion associated with my name<br>
+                I don't care if people say bad things to me. I don't even care about X.<br>
+                Because I know the goals of my life, <br>and I know what I have to do for everyone.<br>
+                Because I know what message to send.</h2>
         </div>
 
-
+<div id="section01">
         <div class="middle_content">
             <div class="img_content">
                 <div class="content_array">
@@ -150,12 +76,12 @@
                         <img src="https://cdn.theatlantic.com/assets/media/img/mt/2018/03/X_1/lead_720_405.jpg?mod=1533691928"/>
                         <p class="side_p"> SAD! SAD! SAD!</p>
                         <div class="p_array"><p>XXXTENTACION</p></div>
-                        <h3>January 23, 1998 – June 18, 2018 <br> known professionally as XXXTentacion was an American rapper,
-                            singer and songwriter. A controversial figure within the hip hop industry,
-                            Onfroy has been regarded to have left behind "a huge musical footprint"
-                            due to his impact on his young fanbase and his popularity during his short career.
-                            His most notable appearance was his tattoos and his distinctive half-colored hair,
-                            which was inspired by the One Hundred and One Dalmatians antagonist Cruella de Vil.</h3>
+                        <h3>Tentacion was born on January 23, 1998 in Florida and was never an ordinary child.
+                            Tentacion had three brothers, all of whom had different mothers, and his father left him when he was four.
+                            At that time, the young Tentasion was often beaten by his father without knowing the English language, and because of this poor and violent family environment,
+                            he fought aggressively from a young age, and in the year when he turned six, a man ran to the man, trying to stab and stab him because he had touched his mother.
+                           <!-- Since childhood, due to financial problems in the family, she has been raised in a house other than her parents' house or her grandmother's house,
+                            and she still has a lot of attachment to her grandmother.--></h3>
                     </div>
 
                 </div>
@@ -166,23 +92,11 @@
                         <p class="side_p"> SAD! SAD! SAD!</p>
                         <div class="p_array"><p>XXXTENTACION</p></div>
                         <h3>
-                            Jahseh Dwayne Ricardo Onfroy was born on January 23, 1998,
-                            in Plantation, Florida, to Jamaican parents, Dwayne Ricardo Onfroy and Cleopatra Eretha Dreena Bernard.
-                            Onfroy has stated he has Egyptian, Syrian, Indian and possibly Italian ancestry in an interview on The Beat in 2017.
-                            He had three siblings with one being half, shared paternally.[34] Onfroy was mainly raised by his grandmother Collette Jones—due to his mother's financial situation—in
-                            Pompano Beach, Florida, and Lauderhill, Florida. When Onfroy was six years old, he tried to stab a man attempting to attack his mothe
-                            and was eventually put into a youth program before being forced to live with his grandmother.
-
-            <!--                Onfroy's interest in music initially started after his aunt persuaded him to begin attending school choir and later church choir.
-                            He was soon kicked out of the school choir after attacking another student.
-                            Onfroy attended Margate Middle School from which he was later expelled after a series of physical altercations.
-                            He was subsequently enrolled into Sheridan House Family Ministries by his mother for over six months.
-                            Onfroy began to listen to nu-metal, hard rock and rap during his time at Sheridan House Family Ministries, which led to him to learn the piano and guitar.
-
-                            Onfroy attended Piper High School until he dropped out in the tenth grade.
-                            He described himself as a "misfit" during that time, citing how quiet he was despite being popular and regularly involved in physical confrontations.
-                            Onfroy was not the athletic type and said that he was insecure and depressed during his time in high school.
-                            -->
+                            After a while, the reason he first became interested in music in such an unhappy home environment was because of his aunt,
+                            who persistently persuaded Tentasion not to attend the school choir and church choir,
+                            and reluctantly attended the tentacion soon after attacking another student,
+                            but that was the first time he was expelled from the school and music. Before I knew it,
+                            he entered middle school, but there were also violent and abnormal behaviors.
                         </h3>
                     </div>
                 </div>
@@ -194,29 +108,92 @@
                         <div class="p_array"><p>XXXTENTACION</p></div>
                         <H3>
 
-                                            Onfroy's interest in music initially started after his aunt persuaded him to begin attending school choir and later church choir.
-                                            He was soon kicked out of the school choir after attacking another student.
-                                            Onfroy attended Margate Middle School from which he was later expelled after a series of physical altercations.
-                                            He was subsequently enrolled into Sheridan House Family Ministries by his mother for over six months.
-                                            Onfroy began to listen to nu-metal, hard rock and rap during his time at Sheridan House Family Ministries, which led to him to learn the piano and guitar.
-
-                                        </H3>
-                                    </div>
+                            After being expelled from middle school for a number of violent and abnormal acts,
+                            he barely managed to graduate from other middle schools again,
+                            and then his mother enrolled him in an academy called 'Sheridian House Family Ministries' for more than six months,
+                            where he began to learn metal hard rock, piano and so on. Maybe that's when Tentasion decided to start music,
+                            but he dropped out of high school in 2014 to start music seriously.
+                        </H3>
                                 </div>
+                        </div>
 
                                 <div class="content_array">
                                     <div class="img_array_4">
                                         <img src="https://edm.com/.image/ar_16:9%2Cc_fill%2Ccs_srgb%2Cfl_progressive%2Cg_faces:center%2Cq_auto:good%2Cw_768/MTU2NDE0ODc3MzE1OTAxMTc1/040217-music-xxxtentacion.jpg"/>
                                         <div class="p_array"><p>XXXTENTACION</p></div>
+                                        <h3>
+                                            Then, at a small call center, he buys a microphone and a MacBook with the money he saved from a part-time job for $10 an hour,
+                                            and he has produced his first song,
+                                            "Vice City," which became famous for his sound cloud with these two pieces of equipment,
+                                            and he enters juvie for a year on charges of illegal gun possession at the moment he tries to build a career with quite good reviews from his users.  </h3>
                                     </div>
                                 </div>
+                <div class="content_array">
+                    <div class="img_array_5">
+                        <img src="https://66.media.tumblr.com/8a11df2532ab2cf83d4d3628895084fe/tumblr_pak0dasGe41rpwwe9o1_1280.jpg" />
+                        <p class="side_p"> SAD! SAD! SAD!</p>
+                        <div class="p_array"><p>XXXTENTACION</p></div>
 
+                    </div>
+                </div>
+
+                <div class="content_array">
+                    <div class="img_array_6">
+                        <p class="side_p"> SAD! SAD! SAD!</p>
+                        <img src="https://i.ytimg.com/vi/Fu9dxOmh3PU/maxresdefault.jpg" />
+                        <div class="p_array"><p>XXXTENTACION</p></div>
+                        <h3>
+                            But the person I met there is Ski Mask The Slump God, and the first turning point in my music career.
+                            Together, the two start their music in earnest by creating a crew called Members only,
+                            around this time his stage name is <strong>XXXTENTACON</strong>.
+                        </h3>
+                    </div>
+                </div>
+
+                <div class="content_array">
+                    <div class="img_array_7">
+                        <img src="https://66.media.tumblr.com/8a11df2532ab2cf83d4d3628895084fe/tumblr_pak0dasGe41rpwwe9o1_1280.jpg" />
+                        <div class="p_array"><p>XXXTENTACION</p></div>
+                        <h3>
+                        </h3>
+                    </div>
+                </div>
 
                           </div>
                         </div>
-                </div>
+
+
+
+</div>
+</div>
 
                         <div class="footer"></div>
-                </div>
+
+<script>
+    /* 메뉴바 FIXED */
+    /* 메뉴바 FIXED */
+    if (jQuery(window).width() > 0) {
+        jQuery(window).on("scroll",function(ev){
+            if(jQuery(window).scrollTop() > 80 ) { /* 해당 높이를 벗어나면 fixed 클래스 추가 */
+                jQuery('.menu_box').addClass('fixed');
+            }
+            else{
+                jQuery('.menu_box').removeClass('fixed');
+            }
+            return false;
+        });
+    }
+    /* 해당위치로 스크롤링 */
+    $(function(){
+        $('a[href^=#]').click(function() {
+            var speed = 500; /* 스크롤 속도 */
+            var href= $(this).attr("href");
+            var target = $(href == "#" || href == "" ? 'html' : href);
+            var position = target.offset().top;
+            $('body,html').animate({scrollTop:position}, speed, 'swing');
+            return false;
+        });
+    });
+</script>
                 </body>
                 </html>

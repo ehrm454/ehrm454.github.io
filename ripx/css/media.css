@@ -4,6 +4,13 @@
         overflow-x: hidden;
         min-width: 320px;
     }
+    h1{
+    color: white;
+    margin: 0 auto;
+    text-align: center;
+    top: 23px;
+}
+
     .top_content{padding:0; width:auto;}
     .middle_content .img_content {
         width:auto;
@@ -12,16 +19,21 @@
         padding:0;
     }
     .middle_content {
+        margin-top:5px;
         position: relative;
         width:auto;
         max-width: 100000px;
-        margin: auto;
+
         background: #000000;
-        height: 5000px;
+        height: 2300px;
+
     }
     .content_array>div>img {
         padding:0;
+        width: 100%;
+        height: 100%;
     }
+
     .content_array>div {
         padding:0;
         margin:0;
@@ -61,4 +73,23 @@
     .p_array p{font-size:24px;}
     .content_array>div>h3{font-size:13px;     font-weight: 100;}
     #section01{margin-top:18px;}
+
+
+    /* 두번째 섹션 */
+    .content_array>.img_array_7 {
+        height:auto;
+        }
+    .content_array>.img_array_8 {
+        height:auto;
+    }
+    .content_array>.img_array_9 {
+        height:auto;
+    }
+    .content_array>div:hover .h3_array {
+        transform: translateX(16px);
+        transition-duration: 1s;
+        color: white;
+        width: 100%;
+    }
+
 }

@@ -5,6 +5,19 @@ h1{
     text-align:center;
 
 }
+
+#warp iframe{ left:80%;width:100px; height:100px;}
+#body{overflow:hidden; width:100%; height:100%;}
+.loading{ background: #000000;
+    overflow: hidden;
+    position: absolute;
+    z-index: 999;
+    width: 100%;
+    height: 100%;
+    font: 5vw/100vh "Rock Salt";
+    text-align: center;
+    color: transparent;
+    backface-visibility: hidden;}
 .warp{width:100%; height:100%;}
 .warp img{width:100%; height:100%;}
 .top_content{position:relative; width:100%;height:100%; z-index:101; }
@@ -62,9 +75,9 @@ h1{
 
 
 /* 두번째 컨텐츠 */
-#section02>h1{text-align: unset;}
+
 .second_content{position:relative; width: calc(100% - 100px);max-width: 1500px;
-    background: black; height:2500px; z-index:90;top:0; margin:0 auto;}
+    background: black; height:1600px; z-index:90;top:0; margin:0 auto;}
 .h3_array{width:50%; height:auto; color: #03070e; float:right; padding:3%; transition-duration:1s; transform:translateX(-400px); z-index:1;}
 .h3_p{width:60%; float:left;}
 .h3_p2{width:40%; float:left;}

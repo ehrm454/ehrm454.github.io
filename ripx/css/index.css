@@ -68,7 +68,7 @@ h1{
     padding: 0 35px 0 0;
     width: 100%;
     position: relative;
-    right: -14%;
+    right: -30%;
 }
 .menu_box .menu_inner li { float:left; text-align:center; margin-left:65px; }
 .menu_box .menu_inner li a { text-decoration:none; color: #ffffff; line-height:80px; font-size:12px; }

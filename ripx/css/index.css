@@ -75,7 +75,7 @@ h1{
 
 
 /* 두번째 컨텐츠 */
-
+#section02{margin-top:300px;}
 .second_content{position:relative; width: calc(100% - 100px);max-width: 1500px;
     background: black; height:1600px; z-index:90;top:0; margin:0 auto;}
 .h3_array{width:50%; height:auto; color: #03070e; float:right; padding:3%; transition-duration:1s; transform:translateX(-400px); z-index:1;}

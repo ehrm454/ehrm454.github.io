@@ -60,7 +60,7 @@ body {
     background-color:white;
 }
 .ppt_header{   line-height: 1;font-family: sans-serif;    text-align: center;     margin-top: -46px;}
-.ppt_content{margin-top:30px;}
+.ppt_content{margin-top:110px;}
 .ppt_contents{}
 .ppt_img img{width:52%; float:left;}
 .ppt_contents_p{ width:41%; float:right; margin-right:30px;      font-size: 20px; font-family: sans-serif; line-hieght: 1;}

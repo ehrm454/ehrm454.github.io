@@ -1,5 +1,38 @@
 $(document).ready(function () {
     $('body').css('opacity','1');
+    /*$(".main").on('mousewheel',function(e){
+        var wheel = e.originalEvent.wheelDelta;
+            if(wheel>0){
+    //스크롤 올릴때
+
+            } else {
+    //스크롤 내릴때
+                $(".main , .banner , .ppt_first , body , #ppt").css("background-color","black");
+                $(".main , .banner , .ppt_first , body , #ppt").css("transition","all 1.5s ease 0s");
+                $('.banner_inner a , .banner_img a , .banner_img h1, .box h1 , .box a,.ppt_content a,table').css("color","white");
+                $("#ppt a:link").css("color","red");
+            }
+        });
+*/
+    var css1 = $(".main , .banner , .ppt_first , body , #ppt");
+    var css2 = $(".banner_inner a , .banner_img a , .banner_img h1, .box h1 , .box a,.ppt_content a,table");
+    $(".click_e").click(function () {
+        $(css1).css("background-color","black");
+        $(css1).css("transition","all 1.5s ease 0s");
+        $(css2).css("color","white");
+        $("#ppt a:link").css("color","gray");
+        $(".click_e,.click_w").css("color","gray");
+        $("nav div:hover").css("background-color","white");
+        $("nav div h2").css("color","white");
+    });
+
+    $(".click_w").click(function () {
+        $(css1).css("background-color","white");
+        $(css1).css("transition","all 1.5s ease 0s");
+        $(css2).css("color","black");
+        $("#ppt a:link").css("color","black");
+        $(".click_e,.click_w").css("color","gray");
+    });
 
     var width = parseInt($('body').css('width'));
 

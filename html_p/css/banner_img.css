@@ -3,8 +3,8 @@ nav  {    font-size: 19px;}
 nav a {width: 100%; color:gray; }
 nav h2{margin: 0;
     padding: 0;}
-nav div{transition:all .2s; width: 400px; cursor: pointer;}
-nav div:hover{  transition:all .2s; background-color:black; }
+nav div{ition:all .2s; width: 80%; cursor: pointer;}
+nav div:hover{  ition:all .2s; background-color:black; }
 nav div:hover {color:white; }
 nav div:hover h2 a{color:white;}
 
@@ -14,7 +14,7 @@ nav div:hover h2 a{color:white;}
 .banner_out_right{ float:right; width:50%; height:100%;}
 .banner_out_right{font-family: 'Francois One', sans-serif;}
 .banner_img{}
-.banner_img_set{position:relative; z-index:55;  transition:all 500ms linear; transition-duration: 500ms;}
+.banner_img_set{position:relative; z-index:55;  ition:all 500ms linear; transition-duration: 500ms;}
 .banner img{width:100%; height:100%;}
 /*
 #banner_img2{    bottom: 500px;}
